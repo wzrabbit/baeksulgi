@@ -1,9 +1,9 @@
 import styles from './Baeksulgi.module.css';
+import { useContext } from 'react';
+import { BaeksulgiContext } from '../BaeksulgiProvider';
 
 const Baeksulgi = () => {
-  const isOpen = true;
-  const closeModal = () => {};
-  const content = <div>Hello, World!</div>;
+  const { isOpen, content, closeModal } = useContext(BaeksulgiContext);
 
   return (
     <dialog className={styles.modal} open={isOpen}>

@@ -7,7 +7,6 @@
 
 .modal {
   padding: 0;
-  position: fixed;
   display: flex;
   flex-direction: column-reverse;
   top: 0;
