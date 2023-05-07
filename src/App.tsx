@@ -1,11 +1,15 @@
 import React from 'react';
-import './App.module.css';
-import { Baeksulgi } from './lib';
+import './App.css';
+import { Baeksulgi, BaeksulgiProvider } from './lib';
+import Button from './Button';
 
 const App = () => {
   return (
-    <div>
-      <Baeksulgi />
+    <div className="test-container">
+      <BaeksulgiProvider>
+        <Button />
+        <Baeksulgi />
+      </BaeksulgiProvider>
     </div>
   );
 };
